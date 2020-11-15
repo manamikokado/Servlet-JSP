@@ -35,7 +35,7 @@ public class RegisterUser extends HttpServlet {
 			// 「登録の開始」をリクエストされたときの処理
 			// フォワード先を設定
 			forwardPath = "/WEB-INF/jsp/registerForm.jsp";
-		} else if (action.contentEquals("done")) {
+		} else if (action.equals("done")) {
 			// 登録確認画面から「登録実行」をリクエストされたときの処理
 			// セッションスコープに保存された登録ユーザを取得
 			HttpSession session = request.getSession();
